@@ -10,4 +10,9 @@ class CoreController extends Controller
     {
         return $this->render('BatisCoreBundle:Core:index.html.twig');
     }
+
+    public function addProjectAction()
+    {
+    	return $this->render('BatisCoreBundle:Core:addProject.html.twig');
+    }
 }

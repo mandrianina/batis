@@ -1,3 +1,7 @@
 batis_core_homepage:
     path:     /
     defaults: { _controller: BatisCoreBundle:Core:index }
+
+batis_core_addproject:
+    path:     /addProject
+    defaults: { _controller: BatisCoreBundle:Core:addProject }
