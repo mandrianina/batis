@@ -1,0 +1,4 @@
+services:
+#    batis_core.example:
+#        class: Batis\CoreBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

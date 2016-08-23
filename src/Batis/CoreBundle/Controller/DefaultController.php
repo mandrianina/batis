@@ -1,6 +1,6 @@
 <?php
 
-namespace Batis\CrowdsourcingBundle\Controller;
+namespace Batis\CoreBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -8,6 +8,6 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('BatisCrowdsourcingBundle:Default:index.html.twig');
+        return $this->render('BatisCoreBundle:Default:index.html.twig');
     }
 }

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block BatisCrowdsourcing_title %}Batis{% endblock %}</title>
+	{% block stylesheets %}
+    {% stylesheets '@BatisCrowdsourcingBundle/Resources/public/css/*' filter='cssrewrite' %}
+    	<link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+    {% endblock %}
+
+</head>
+<body>
+{% block BatisCrowdsourcing_body %}
+{% endblock %}
+
+{% block javascripts %}
+{% javascripts '@BatisCrowdsourcingBundle/Resources/public/js/jquery.min.js'
+                           '@BatisCrowdsourcingBundle/Resources/public/js/bootstrap.min.js' %}
+	<script src="{{ asset_url }}"></script>
+{% endjavascripts %}
+{% endblock %}
+</body>
+</html>

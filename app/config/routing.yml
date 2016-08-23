@@ -1,3 +1,7 @@
+batis_core:
+    resource: "@BatisCoreBundle/Resources/config/routing.yml"
+    prefix:   /
+
 batis_crowdsourcing:
     resource: "@BatisCrowdsourcingBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /crowdsourcing/

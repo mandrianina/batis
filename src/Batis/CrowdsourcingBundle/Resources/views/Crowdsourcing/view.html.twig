@@ -1,0 +1,53 @@
+{% extends "BatisCrowdsourcingBundle::layout.html.twig" %}
+
+{% block BatisCrowdsourcing_body %}
+
+<div class="container-fluid well">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-6">
+					<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" />
+				</div>
+				<div class="col-md-6">
+					<div class="btn-group">
+						 
+						<a href="{{ path('batis_crowdsourcing_homepage') }}" class="btn btn-default">
+						<i class="glyphicon glyphicon-chevron-left"></i>
+						</a>
+						<a href="{{ path('batis_crowdsourcing_edit', {'id': projet.id}) }}" class="btn btn-default">
+						<i class="glyphicon glyphicon-edit"></i>
+						</a>
+						<a href="" class="btn btn-default">
+						<i class="glyphicon glyphicon-trash"></i>
+						</a>
+
+					</div>
+				</div>
+			</div>
+			<h3>
+				{{ projet.titre }}
+			</h3>
+			<dd>
+				{{ projet.contenu }}
+			</dd>
+			<dt>
+				Date de création du projet : {{ projet.datecreation|date('Y-m-d') }}	
+			</dt>
+			<dt>
+				Date limite d'écheance : {{ projet.datelimite|date('Y-m-d') }}	
+			</dt>
+			<dt>
+				Type du projet : {{ projet.type }}	
+			</dt>
+			<dt>
+				Budget : {{ projet.budget }}	" ariary"
+			</dt>
+			<dt>
+				Status : {{ projet.status }}	
+			</dt>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

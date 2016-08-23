@@ -1,3 +1,21 @@
 batis_crowdsourcing_homepage:
     path:     /
-    defaults: { _controller: BatisCrowdsourcingBundle:Default:index }
+    defaults: { _controller: BatisCrowdsourcingBundle:Project:index }
+
+batis_crowdsourcing_add:
+    path:     /add
+    defaults: { _controller: BatisCrowdsourcingBundle:Project:add }
+
+batis_crowdsourcing_view:
+    path:     /project/{id}
+    defaults: 
+          { _controller: BatisCrowdsourcingBundle:Project:view }
+    requirements: 
+          id: \d+
+
+batis_crowdsourcing_edit:
+    path:     /project/edit/{id}
+    defaults:
+          { _controller: BatisCrowdsourcingBundle:Project:edit }
+    requirements:
+          id: \d+

@@ -1,0 +1,45 @@
+{% extends "BatisCrowdsourcingBundle::layout.html.twig" %}
+
+{% block BatisCrowdsourcing_body %}
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>
+							Titre/Contenu
+						</th>
+						<th>
+							Date de Création
+						</th>
+						<th>
+							Type
+						</th>
+						<th>
+							Budget
+						</th>
+						<th>
+							Status
+						</th>
+					</tr>
+				</thead>
+
+				<tbody>
+				{% for project in projects %}
+				<tr>
+					<td><a href="{{ path('batis_crowdsourcing_view', {'id' : project.id}) }}">{{ project.titre }}</a>
+						</br>{{ project.contenu }}</td>
+					<td>{{ project.datecreation|date('Y-m-d') }}</td>
+					<td>{{ project.type }}</td>
+					<td>{{ project.budget }}</td>
+					<td>{{ project.status }}</td>
+				</tr>
+				{% endfor %}
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

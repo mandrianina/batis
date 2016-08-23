@@ -1,0 +1,3 @@
+batis_core_homepage:
+    path:     /
+    defaults: { _controller: BatisCoreBundle:Default:index }

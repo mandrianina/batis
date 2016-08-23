@@ -9,13 +9,17 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>{% block title %}Welcome!{% endblock %}</title>
+    <title> {% block title %}
+    Stylish Portfolio - Start Bootstrap Theme 
+    {% endblock %}
+    </title>
 
     {% block stylesheets %}
     {% stylesheets '@BatisCrowdsourcingBundle/Resources/public/css/*' filter='cssrewrite' %}
-        <link rel="stylesheet" href="{{ asset_url }}" />
+    <link rel="stylesheet" href="{{ asset_url }}" />
     {% endstylesheets %}
     {% endblock %}
+
 </head>
 
 <body>
@@ -23,9 +27,9 @@
         {% block javascripts %}
             {% javascripts '@BatisCrowdsourcingBundle/Resources/public/js/jquery.js'
                            '@BatisCrowdsourcingBundle/Resources/public/js/*' %}
-                <script src="{{ asset_url }}"></script>
+            <script src="{{ asset_url }}"></script>
             {% endjavascripts %}
         {% endblock %}
 </body>
 
-</html>
+

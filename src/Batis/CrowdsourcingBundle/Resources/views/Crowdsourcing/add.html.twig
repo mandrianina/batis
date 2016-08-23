@@ -1,0 +1,10 @@
+{% extends "BatisCrowdsourcingBundle::layout.html.twig" %}
+
+{% block BatisCrowdsourcing_body %}
+
+<div class="well">
+{{ form_start(form, {'attr' : {'class': 'form-horizontal'}}) }}
+{{ form_rest(form) }}
+{{ form_end(form) }}
+</div>
+{% endblock %}
